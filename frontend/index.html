@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>AgriGAN — AI Crop Disease Detector & Synthetic Image Generator</title>
+    <meta name="description" content="An advanced DCGAN-powered system that generates synthetic crop disease imagery from the PlantVillage dataset, enabling robust agricultural AI model training through data augmentation." />
+    <meta name="keywords" content="crop disease detection, GAN, generative adversarial network, PlantVillage, tomato disease, AI agriculture, DCGAN, deep learning" />
+    <meta name="author" content="Navya Jaidka" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AgriGAN — AI Crop Disease Detector" />
+    <meta property="og:description" content="DCGAN-powered synthetic crop disease imagery generator for dataset augmentation." />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon (leaf emoji SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent flash of unstyled content for dark mode -->
+    <script>
+      (function() {
+        var saved = localStorage.getItem('agriGanTheme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
