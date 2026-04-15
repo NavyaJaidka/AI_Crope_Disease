@@ -83,7 +83,7 @@ const DiseaseDetector = () => {
       if (!data.success) throw new Error(data.error || 'Detection failed');
       setResult(data);
     } catch (err) {
-      setError(err.message.includes('fetch') ? 'Cannot reach backend — is it running on port 5000?' : err.message);
+      setError(err.message);
     } finally {
       setLoading(false);
     }
